@@ -4,9 +4,12 @@ from pages.brand_page import BrandPage
 from pages.product_page import ProductPage
 from pages.cart_page import CartPage
 
+
 def test_end_to_end():
 
     driver = get_driver()
+
+    print("Page Title:", driver.title)
 
     signup = SignupPage(driver)
     brand = BrandPage(driver)
